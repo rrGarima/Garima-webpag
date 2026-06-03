@@ -1,8 +1,379 @@
-<!doctype html>
-<html>
-  <head><title>Meine Seite</title></head>
-  <body>
-    <h1>Hallo Welt</h1>
-    <p>Das ist meine erste Webseite.</p>
-  </body>
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🥭 Mango – Premium Aesthetic Fruit Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">🥭 MANGO</div>
+            <ul class="nav-links">
+                <li><a href="#about">Über</a></li>
+                <li><a href="#origin">Herkunft</a></li>
+                <li><a href="#varieties">Sorten</a></li>
+                <li><a href="#usage">Verwendung</a></li>
+                <li><a href="#facts">Fun Facts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">MANGO</h1>
+                <p class="hero-tagline">Sweet. Tropical. Naturally Luxurious.</p>
+                <button class="btn btn-primary" onclick="document.getElementById('varieties').scrollIntoView({behavior: 'smooth'})">
+                    Explore Varieties
+                </button>
+            </div>
+            <div class="hero-illustration">
+                <svg viewBox="0 0 200 240" class="mango-svg">
+                    <defs>
+                        <linearGradient id="mangoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+                            <stop offset="50%" style="stop-color:#FFA500;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
+                        </linearGradient>
+                    </defs>
+                    <!-- Mango Form -->
+                    <path d="M 100 20 Q 150 40 160 100 Q 165 140 150 180 Q 130 200 100 210 Q 70 200 50 180 Q 35 140 40 100 Q 50 40 100 20 Z" fill="url(#mangoGrad)" stroke="#D4A574" stroke-width="2"/>
+                    <!-- Leaf -->
+                    <ellipse cx="110" cy="15" rx="12" ry="25" fill="#7DB873" transform="rotate(-30 110 15)" opacity="0.8"/>
+                    <!-- Highlight -->
+                    <ellipse cx="85" cy="70" rx="20" ry="30" fill="white" opacity="0.3"/>
+                </svg>
+            </div>
+        </div>
+    </section>
+
+    <!-- What is a Mango Section -->
+    <section id="about" class="section about-section">
+        <div class="container">
+            <h2 class="section-title">Was ist eine Mango?</h2>
+            <p class="section-intro">
+                Die Mango ist eine tropische Steinfrüchte, die für ihren süßen, saftigen Geschmack und ihre cremige Textur bekannt ist. Sie wird oft als die "Königin der Früchte" bezeichnet und ist eine der beliebtesten Tropenfrüchte weltweit. Mit ihrer vibranten Farbe, ihrem intensiven Aroma und ihrer Vielseitigkeit hat die Mango Kulturen und Küchen auf der ganzen Welt erobert.
+            </p>
+
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <div class="benefit-icon">🔆</div>
+                    <h3>Vitamin C</h3>
+                    <p>Stärkt das Immunsystem und unterstützt die Hautgesundheit</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">👁️</div>
+                    <h3>Vitamin A</h3>
+                    <p>Wichtig für die Augengesundheit und das Sehvermögen</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🌿</div>
+                    <h3>Ballaststoffe</h3>
+                    <p>Unterstützt die Verdauung und den Darmtrakt</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">✨</div>
+                    <h3>Antioxidantien</h3>
+                    <p>Schützt Zellen vor freien Radikalen und Alterung</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">🍯</div>
+                    <h3>Natürliche Fruchtsüße</h3>
+                    <p>Befriedigt Zuckerhunger ohne raffinierte Zucker</p>
+                </div>
+                <div class="benefit-card">
+                    <div class="benefit-icon">💪</div>
+                    <h3>Weitere Vorteile</h3>
+                    <p>Kalium, Kupfer und potenzielle krebsbekämpfende Eigenschaften</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Origin Section -->
+    <section id="origin" class="section origin-section">
+        <div class="container">
+            <h2 class="section-title">Die Herkunft der Mango</h2>
+
+            <div class="origin-grid">
+                <div class="origin-card">
+                    <h3>Ursprung</h3>
+                    <p>🇮🇳 <strong>Indien & Südasien</strong></p>
+                    <p class="origin-text">Die Mango wird seit über 4000 Jahren in Südindien und auf dem indischen Subkontinent kultiviert. Sie ist tief in der südasiatischen Kultur, Mythologie und Küche verwurzelt.</p>
+                </div>
+
+                <div class="origin-card">
+                    <h3>Globale Verbreitung</h3>
+                    <p>🌍 <strong>Weltweite Kultivierung</strong></p>
+                    <p class="origin-text">Von Indien aus verbreitete sich die Mango nach Thailand, auf die Philippinen, nach Mexiko, Brasilien, Afrika und in viele andere tropische und subtropische Regionen der Welt.</p>
+                </div>
+
+                <div class="origin-card full-width">
+                    <h3>Regionale Unterschiede</h3>
+                    <p class="origin-text">Jede Region hat ihre eigene Mango-Identität. Das Klima bestimmt die Süße, das Aroma und die Textur. Unterschiedliche Anbaubedingungen führen zu unterschiedlichen Sorten und Geschmacksprofilen – von der intensiv süßen indischen Alphonso bis zur cremigen mexikanischen Ataulfo.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mango Varieties Section -->
+    <section id="varieties" class="section varieties-section">
+        <div class="container">
+            <h2 class="section-title">Mango Varieties</h2>
+            <p class="section-intro">Entdecke die verschiedenen Sorten und ihre einzigartigen Charakteristiken</p>
+
+            <div class="varieties-grid">
+                <div class="variety-card">
+                    <div class="variety-illustration">
+                        <svg viewBox="0 0 150 180" class="variety-svg">
+                            <defs>
+                                <linearGradient id="alphonso" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#FF6B1A;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M 75 20 Q 110 35 120 90 Q 120 140 75 170 Q 30 140 30 90 Q 40 35 75 20 Z" fill="url(#alphonso)" stroke="#D4A574" stroke-width="1.5"/>
+                            <ellipse cx="75" cy="65" rx="18" ry="25" fill="white" opacity="0.25"/>
+                        </svg>
+                    </div>
+                    <h3>Alphonso</h3>
+                    <p class="variety-country">🇮🇳 Indien</p>
+                    <p class="variety-description">Luxuriös, intensiv süß, sehr aromatisch. Die König aller Mangos.</p>
+                    <div class="variety-tags">
+                        <span class="tag">Honigartig 🍯</span>
+                        <span class="tag">Intensiv</span>
+                    </div>
+                </div>
+
+                <div class="variety-card">
+                    <div class="variety-illustration">
+                        <svg viewBox="0 0 150 180" class="variety-svg">
+                            <defs>
+                                <linearGradient id="ataulfo" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#FFE066;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#FFB347;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <ellipse cx="75" cy="90" rx="45" ry="60" fill="url(#ataulfo)" stroke="#D4A574" stroke-width="1.5"/>
+                            <ellipse cx="65" cy="70" rx="15" ry="20" fill="white" opacity="0.25"/>
+                        </svg>
+                    </div>
+                    <h3>Honey Mango (Ataulfo)</h3>
+                    <p class="variety-country">🇲🇽 Mexiko</p>
+                    <p class="variety-description">Cremig, buttrig, sehr süß. Perfekt für Desserts.</p>
+                    <div class="variety-tags">
+                        <span class="tag">Cremig 🥭</span>
+                        <span class="tag">Buttrig</span>
+                    </div>
+                </div>
+
+                <div class="variety-card">
+                    <div class="variety-illustration">
+                        <svg viewBox="0 0 150 180" class="variety-svg">
+                            <defs>
+                                <linearGradient id="kesar" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M 75 15 Q 120 40 125 100 Q 115 150 75 175 Q 35 150 25 100 Q 30 40 75 15 Z" fill="url(#kesar)" stroke="#D4A574" stroke-width="1.5"/>
+                            <ellipse cx="80" cy="60" rx="16" ry="28" fill="white" opacity="0.28"/>
+                        </svg>
+                    </div>
+                    <h3>Kesar</h3>
+                    <p class="variety-country">🇮🇳 Indien</p>
+                    <p class="variety-description">Fruchtig, reichhaltig und intensiv. Königliche Sorte.</p>
+                    <div class="variety-tags">
+                        <span class="tag">Fruchtig 🌸</span>
+                        <span class="tag">Reichhaltig</span>
+                    </div>
+                </div>
+
+                <div class="variety-card">
+                    <div class="variety-illustration">
+                        <svg viewBox="0 0 150 180" class="variety-svg">
+                            <defs>
+                                <linearGradient id="nam-dok-mai" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#FFEB99;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#FFD700;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <ellipse cx="75" cy="85" rx="48" ry="65" fill="url(#nam-dok-mai)" stroke="#D4A574" stroke-width="1.5"/>
+                            <ellipse cx="62" cy="65" rx="18" ry="24" fill="white" opacity="0.3"/>
+                        </svg>
+                    </div>
+                    <h3>Nam Dok Mai</h3>
+                    <p class="variety-country">🇹🇭 Thailand</p>
+                    <p class="variety-description">Blumig, elegant und weich. Zart und raffiniert.</p>
+                    <div class="variety-tags">
+                        <span class="tag">Blumig 🌸</span>
+                        <span class="tag">Elegant</span>
+                    </div>
+                </div>
+
+                <div class="variety-card">
+                    <div class="variety-illustration">
+                        <svg viewBox="0 0 150 180" class="variety-svg">
+                            <defs>
+                                <linearGradient id="kent" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#FF8C00;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <path d="M 75 25 Q 115 45 120 100 Q 112 145 75 170 Q 38 145 30 100 Q 35 45 75 25 Z" fill="url(#kent)" stroke="#D4A574" stroke-width="1.5"/>
+                            <ellipse cx="78" cy="70" rx="17" ry="26" fill="white" opacity="0.26"/>
+                        </svg>
+                    </div>
+                    <h3>Kent</h3>
+                    <p class="variety-country">🇵🇪 Peru</p>
+                    <p class="variety-description">Saftig, mild und ausgewogen. Allrounder.</p>
+                    <div class="variety-tags">
+                        <span class="tag">Saftig ✨</span>
+                        <span class="tag">Mild</span>
+                    </div>
+                </div>
+
+                <div class="variety-card">
+                    <div class="variety-illustration">
+                        <svg viewBox="0 0 150 180" class="variety-svg">
+                            <defs>
+                                <linearGradient id="palmer" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#FFA500;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#FF6B1A;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <ellipse cx="75" cy="90" rx="50" ry="62" fill="url(#palmer)" stroke="#D4A574" stroke-width="1.5"/>
+                            <ellipse cx="68" cy="68" rx="19" ry="26" fill="white" opacity="0.27"/>
+                        </svg>
+                    </div>
+                    <h3>Palmer</h3>
+                    <p class="variety-country">🇧🇷 Brasilien</p>
+                    <p class="variety-description">Aromatisch, sanft und wenig faserig. Smooth & easy.</p>
+                    <div class="variety-tags">
+                        <span class="tag">Aromatisch 🌴</span>
+                        <span class="tag">Faserarm 🌿</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Usage Section -->
+    <section id="usage" class="section usage-section">
+        <div class="container">
+            <h2 class="section-title">Verwendung von Mangos</h2>
+            <p class="section-intro">Entdecke die vielseitige Kulinarik der Mango</p>
+
+            <div class="usage-grid">
+                <div class="usage-card">
+                    <div class="usage-image">
+                        <img src="https://images.unsplash.com/photo-1614707267537-b85faf00021b?w=500&h=400&fit=crop" alt="Mango Lassi und Smoothies">
+                    </div>
+                    <h3>🥤 Getränke</h3>
+                    <p><strong>Mango Lassi, Smoothies & Cocktails</strong></p>
+                    <p>Von klassischem indischen Mango Lassi über erfrischende Smoothies bis zu eleganten tropischen Cocktails – die Mango verleiht Getränken ein herrlich fruchtiges und cremiges Aroma.</p>
+                </div>
+
+                <div class="usage-card">
+                    <div class="usage-image">
+                        <img src="https://images.unsplash.com/photo-1563379091339-03b21ab4a104?w=500&h=400&fit=crop" alt="Mango Desserts">
+                    </div>
+                    <h3>🍰 Desserts</h3>
+                    <p><strong>Sticky Rice, Cheesecake, Sorbet & mehr</strong></p>
+                    <p>Die natürliche Süße und Creaminess der Mango macht sie perfekt für Desserts. Von traditionellem Mango Sticky Rice bis zu modernem Cheesecake – jedes Gericht wird zum Highlight.</p>
+                </div>
+
+                <div class="usage-card">
+                    <div class="usage-image">
+                        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=500&h=400&fit=crop" alt="Herzhafte Mango-Gerichte">
+                    </div>
+                    <h3>🥗 Herzhaft</h3>
+                    <p><strong>Salate, Currys, Salsa & Chutneys</strong></p>
+                    <p>Mangos bringen Frische und Balance in herzhafte Gerichte. Ob als Mango Salsa, in exotischen Currys oder knusprigen Salaten – die Frucht ist ein vielseitiger kulinarischer Partner.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fun Facts Section -->
+    <section id="facts" class="section facts-section">
+        <div class="container">
+            <h2 class="section-title">Fun Facts über Mangos</h2>
+
+            <div class="facts-grid">
+                <div class="fact-card">
+                    <div class="fact-number">1000+</div>
+                    <p>Es gibt über 1000 verschiedene Mangosorten weltweit</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number">👑</div>
+                    <p>Die Mango ist die Nationalfrucht Indiens</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number">🌍</div>
+                    <p>Eine der beliebtesten Tropenfrüchte weltweit</p>
+                </div>
+                <div class="fact-card">
+                    <div class="fact-number">100+</div>
+                    <p>Mangobäume können über 100 Jahre alt werden</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 🥭 Mango Premium Experience. Crafted with care.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({behavior: 'smooth'});
+                }
+            });
+        });
+
+        // Navbar transparency on scroll
+        const navbar = document.querySelector('.navbar');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 50) {
+                navbar.style.backdropFilter = 'blur(10px)';
+                navbar.style.backgroundColor = 'rgba(255, 245, 230, 0.8)';
+            } else {
+                navbar.style.backdropFilter = 'none';
+                navbar.style.backgroundColor = 'rgba(255, 245, 230, 0.95)';
+            }
+        });
+
+        // Intersection Observer for fade-in animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
 </html>
